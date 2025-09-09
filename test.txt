@@ -1,2 +1,16 @@
 This is my change.
 This change was instituted via a local machine.
+
+Here is an example of a simple generator function in JavaScript:
+
+function * genGen(i, max) {
+	while ( i < max ) {
+	  yield i;
+	  i++
+	}
+  }
+
+const genVar = genGen( 0, 9 )
+console.log(genVar.next().value)
+
+Note: Iterations can be run until the max is reached
