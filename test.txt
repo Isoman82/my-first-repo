@@ -13,4 +13,7 @@ function * genGen(i, max) {
 const genVar = genGen( 0, 9 )
 console.log(genVar.next().value)
 
-Note: Iterations can be run until the max is reached
+// console.log() is used here to output the value of the generator function
+
+Note: Iterations can be run until the max value is reached
+
