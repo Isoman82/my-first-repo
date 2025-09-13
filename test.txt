@@ -16,4 +16,3 @@ console.log(genVar.next().value)
 // console.log() is used here to output the value of the generator function
 
 Note: Iterations can be run until the max value is reached
-
