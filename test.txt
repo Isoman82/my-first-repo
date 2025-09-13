@@ -16,3 +16,36 @@ console.log(genVar.next().value)
 // console.log() is used here to output the value of the generator function
 
 Note: Iterations can be run until the max value is reached
+
+
+Another fine bit of JavaScript methodology is found within the 'switch/case' syntax. Switch/case removes the need for nested evaluation statements, and instead evaluates a pool of conditions all at once!
+
+The following 'Medal Award' function shows what 'switch/case' syntax can accomplish:
+
+function medalAward( foo ) {
+    switch( foo ) {
+        case 0:
+            medal = 'Gold'
+            break;
+        case 1:
+            medal = 'Silver'
+            break;
+        case 2:
+            medal = 'Bronze'
+            break;
+        case 3:
+            medal = '2nd Place Bronze (4th place)'
+            break;
+        case 4:
+            medal = '3rd Place Bronze (5th place)'
+            break;
+        default:
+            medal = 'Partipication'
+    }
+
+    var medalMessage = `You have been awarded the ${medal} medal.`
+    console.log( medalMessage )
+}
+
+let medal = Math.floor( Math.random() * 6)
+medalAward( medal )
